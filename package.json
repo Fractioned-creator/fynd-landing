@@ -1,0 +1,27 @@
+{
+  "name": "fynd-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "policies": "node scripts/build-policies.mjs",
+    "predev": "npm run policies",
+    "dev": "vite",
+    "prebuild": "npm run policies",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node --env-file-if-exists=.env server.js",
+    "api": "node --watch --env-file-if-exists=.env server.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
+    "vite": "^6.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  }
+}

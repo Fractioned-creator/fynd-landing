@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Scan the plain JS in public/ (slider dots, dropdowns, back-to-top build their markup there). */
+@source "../public";
+@source "../scripts";
+@source not "../dist";
+
+@font-face {
+  font-family: "Xmind";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/xmind-latin-normal.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "Xmind", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-ink: #0a0a0a;
+  --color-ink-2: #3f3f46;
+  --color-muted: #71717a;
+  --color-line: #e7e5e4;
+  --color-paper: #ffffff;
+  --color-paper-2: #f7f6f4;
+  --color-accent: #ca2c54;
+  --color-accent-dark: #a8213f;
+  --color-accent-soft: #fbe9ee;
+  --shadow-card: 0 1px 2px rgba(0,0,0,.04), 0 12px 32px -12px rgba(0,0,0,.12);
+  --shadow-pop: 0 16px 40px -12px rgba(0,0,0,.22), 0 2px 6px rgba(0,0,0,.06);
+  --container-page: 1240px;
+  --animate-cs-in: cs-in .14s ease-out;
+  --animate-fade: fade .3s;
+  @keyframes cs-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { line-height: 1.55; }
+  [hidden] { display: none !important; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+  summary::-webkit-details-marker { display: none; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+}

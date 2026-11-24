@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fynd.club — Refurbished laptops, honestly graded</title>
+  <meta name="description" content="Security-checked, honestly graded refurbished laptops with a 6-month warranty and 10-day returns. Sell your old laptop to Fynd.club." />
+  <link rel="icon" href="logomark.svg" />
+  <link rel="stylesheet" href="styles.css?v=20261123112949" />
+</head>
+<body>
+  <!-- Line icons (drawn for this page), used via <use href="#i-…"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-ram" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="9" rx="1"/><path d="M6 16v3M10 16v3M14 16v3M18 16v3M6 10.5h3M11 10.5h3"/></symbol>
+      <symbol id="i-drive" viewBox="0 0 24 24"><path d="M5.5 5h13l2.5 8H3z"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 16.5h.01M10 16.5h.01"/></symbol>
+      <symbol id="i-gpu" viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="19" height="11" rx="1.5"/><circle cx="9" cy="12" r="3"/><path d="M15 10h4M15 14h4M5 17.5v2.5"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2.5 4h2.6l2.3 10.6h10.4l2.4-7.6H6.3"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></symbol>
+      <symbol id="i-sell" viewBox="0 0 24 24"><circle cx="15.5" cy="6.5" r="3.5"/><path d="M15.5 5v3"/><path d="M2.5 14.5h3l3.2-1.5h4.3a1.5 1.5 0 0 1 0 3H9.8"/><path d="M13 16l5.2-2.4a1.6 1.6 0 0 1 1.6 2.7L13.3 20.5H6.5l-4-1.2"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5.5 8h13l-1 12.5h-11z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/><path d="M9.5 12.5h5"/></symbol>
+      <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M6.5 4h11M6.5 9h11"/><path d="M6.5 4h3.5a5 5 0 0 1 0 10H6.5l8 6.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 5.5a2 2 0 0 1 2-2h12.5v15H6.5a2 2 0 0 0-2 2z"/><path d="M4.5 20.5a2 2 0 0 1 2-2H19"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7M3 12.5h18"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7l-5 5 5 5M15.5 7l5 5-5 5M13.5 4.5l-3 15"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20l8-8-3.5-3.5-8 8z"/><path d="M14.5 6l-9-2.5 2.5 9 4 3.5"/><circle cx="10" cy="10" r="1.6"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-3.5-5.8"/></symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2"/><path d="M6 6l9-3 1.5 3"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9.5 2.5v3M14.5 2.5v3M9.5 18.5v3M14.5 18.5v3M2.5 9.5h3M2.5 14.5h3M18.5 9.5h3M18.5 14.5h3"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18h3"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6 7-11.5a7 7 0 0 0-14 0c0 5.5 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 17v4M17 19h4"/></symbol>
+      <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></symbol>
+      <symbol id="i-wear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 13.5l3-3M11.5 16l4.5-4.5"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L3.5 17.5l3 3 5.7-5.7a4 4 0 0 0 5.3-5.3l-2.4 2.4-2.6-.4-.4-2.6z"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2.5v5M15 2.5v5M6 7.5h12v4a6 6 0 0 1-12 0z"/><path d="M12 17.5v4"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M5.5 3h13v18l-2.5-1.6-2 1.6-2-1.6-2 1.6-2-1.6-2.5 1.6z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M20.5 7.5L12 3 3.5 7.5 12 12z"/><path d="M3.5 7.5v9L12 21l8.5-4.5v-9M12 12v9"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. Header -->
+  <div class="announce">Every laptop is security-checked, graded and backed by a warranty · 10-day returns</div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo"><img src="logo.svg" alt="Fynd.club" /></a>
+      <div class="header-actions">
+        <a href="Buy Now" class="btn btn-dark btn-sm">Buy Now</a>
+        <a href="Sell Now" class="btn btn-dark btn-sm">Sell Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Banners -->
+  <section class="banners" aria-roledescription="carousel">
+    <div class="slides">
+      <article class="slide active">
+        <a href="#action" data-open="buy"><img src="images/banner-19.webp" alt="Premium performance at a price that makes sense — MacBooks, ThinkPads, XPS and more, security-checked, honestly graded and covered by a 6-month warranty. Buy now." width="2560" height="1024" fetchpriority="high" /></a>
+      </article>
+      <article class="slide">
+        <a href="#action" data-open="buy"><img src="images/banner-20.webp" alt="Need more power? We'll upgrade it for you — RAM, SSD and warranty upgrades. Buy now." width="2560" height="1024" loading="lazy" /></a>
+      </article>
+      <article class="slide">
+        <a href="#action" data-open="sell"><img src="images/banner-23.webp" alt="Your old laptop is worth more than you think. Tell us what you have; we call with an offer, pick it up and wipe your data securely. Get an offer." width="2560" height="1024" loading="lazy" /></a>
+      </article>
+    </div>
+    <div class="slider-controls container">
+      <div class="dots" role="tablist"></div>
+    </div>
+  </section>
+
+  <!-- 3. Trust markers -->
+  <section class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+        <div><strong>Security-checked</strong><span>70+ metrics tested</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg>
+        <div><strong>Graded honestly</strong><span>Open Box, Excellent or Good.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+        <div><strong>6-month warranty</strong><span>On every laptop we sell</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+        <div><strong>10-day returns</strong><span>Not right? Send it back</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Sell / Buy -->
+  <section class="action" id="action">
+    <div class="container">
+      <span class="eyebrow center">Get started</span>
+      <h2>What brings you to Fynd.club?</h2>
+      <p class="lead">Choose one and we'll take it from there.</p>
+
+      <div class="choice" role="tablist">
+        <button class="choice-btn" role="tab" data-form="buy" aria-selected="false">
+          <span class="choice-icon"><svg class="i"><use href="#i-cart"/></svg></span>
+          <span class="choice-text"><strong>Buy a laptop</strong><small>Tell us what you need, we'll match you</small></span>
+          <svg class="i choice-arrow"><use href="#i-arrow"/></svg>
+        </button>
+        <button class="choice-btn" role="tab" data-form="sell" aria-selected="false">
+          <span class="choice-icon"><svg class="i"><use href="#i-sell"/></svg></span>
+          <span class="choice-text"><strong>Sell your laptop</strong><small>Get a fair offer by phone</small></span>
+          <svg class="i choice-arrow"><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+
+      <div class="form-wrap" id="form-wrap">
+        <form class="inline-form" id="form-buy" hidden novalidate>
+          <div class="form-head">
+            <span class="form-badge"><svg class="i"><use href="#i-cart"/></svg></span>
+            <div>
+              <h3>Find your next laptop</h3>
+              <p>Share a few details. A Fynd.club specialist will shortlist laptops that fit and call you back.</p>
+            </div>
+          </div>
+
+          <div class="step"><span class="step-n">1</span><h4>What you need</h4></div>
+          <fieldset>
+            <legend>What will you use it for?</legend>
+            <div class="pills">
+              <label><input type="radio" name="use" value="STUDY" required /><span><svg class="i"><use href="#i-book"/></svg>Study</span></label>
+              <label><input type="radio" name="use" value="OFFICE" /><span><svg class="i"><use href="#i-briefcase"/></svg>Office work</span></label>
+              <label><input type="radio" name="use" value="CODING" /><span><svg class="i"><use href="#i-code"/></svg>Coding</span></label>
+              <label><input type="radio" name="use" value="CREATIVE" /><span><svg class="i"><use href="#i-pen"/></svg>Design &amp; video</span></label>
+              <label><input type="radio" name="use" value="TEAM" /><span><svg class="i"><use href="#i-users"/></svg>For my team</span></label>
+            </div>
+          </fieldset>
+          <div class="grid">
+            <label class="field">Budget
+              <span class="control"><svg class="i"><use href="#i-wallet"/></svg>
+                <select name="budget" required>
+                  <option value="">Select budget</option>
+                  <option value="UNDER_30K">Under ₹30,000</option><option value="30K_50K">₹30,000 – ₹50,000</option>
+                  <option value="50K_80K">₹50,000 – ₹80,000</option><option value="ABOVE_80K">Above ₹80,000</option>
+                </select></span>
+            </label>
+            <label class="field">Preferred brand
+              <span class="control"><svg class="i"><use href="#i-laptop"/></svg>
+                <select name="brand">
+                  <option>No preference</option><option>Apple</option><option>Dell</option><option>HP</option>
+                  <option>Lenovo</option><option>ASUS</option><option>Acer</option><option>Microsoft</option>
+                </select></span>
+            </label>
+            <label class="field">Memory
+              <span class="control"><svg class="i"><use href="#i-cpu"/></svg>
+                <select name="ram"><option value="">Any</option><option value="8">8 GB</option><option value="16">16 GB</option><option value="32">32 GB or more</option></select></span>
+            </label>
+          </div>
+
+          <div class="step"><span class="step-n">2</span><h4>How we reach you</h4></div>
+          <div class="grid">
+            <label class="field">Full name
+              <span class="control"><svg class="i"><use href="#i-user"/></svg><input name="name" required autocomplete="name" placeholder="Your name" /></span></label>
+            <label class="field">Mobile number
+              <span class="control has-prefix"><svg class="i"><use href="#i-phone"/></svg><em>+91</em><input name="phone" required type="tel" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="9876543210" autocomplete="tel-national" /></span></label>
+            <label class="field">City
+              <span class="control"><svg class="i"><use href="#i-pin"/></svg><input name="city" required autocomplete="address-level2" placeholder="e.g. Bengaluru" /></span></label>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn-dark" type="submit">Request a callback <svg class="i"><use href="#i-arrow"/></svg></button>
+            <small><svg class="i"><use href="#i-lock"/></svg>We'll only use your number to contact you about this request.</small>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+          <div class="success" hidden>
+            <strong><svg class="i"><use href="#i-check"/></svg>Thank you — request received<span class="ref"></span>.</strong>
+            <p>A Fynd.club specialist will call you within one working day with laptops that fit.</p>
+          </div>
+        </form>
+
+        <form class="inline-form" id="form-sell" hidden novalidate>
+          <div class="form-head">
+            <span class="form-badge accent"><svg class="i"><use href="#i-sell"/></svg></span>
+            <div>
+              <h3>Sell your laptop</h3>
+              <p>Tell us about your laptop. Our team will call with an offer, arrange collection and securely wipe your data.</p>
+            </div>
+          </div>
+
+          <div class="step"><span class="step-n">1</span><h4>Your laptop</h4></div>
+          <div class="grid">
+            <label class="field">Brand
+              <span class="control"><svg class="i"><use href="#i-laptop"/></svg>
+                <select name="brand" required>
+                  <option value="">Select brand</option><option>Apple</option><option>Dell</option><option>HP</option>
+                  <option>Lenovo</option><option>ASUS</option><option>Acer</option><option>Microsoft</option><option>Other</option>
+                </select></span>
+            </label>
+            <label class="field">Model
+              <span class="control"><svg class="i"><use href="#i-cpu"/></svg><input name="model" required placeholder="Choose a brand first" /></span></label>
+            <label class="field">Laptop age
+              <span class="control"><svg class="i"><use href="#i-calendar"/></svg>
+                <select name="age" required>
+                  <option value="">Select</option><option>Under 1 year</option><option>1–2 years</option>
+                  <option>2–4 years</option><option>Over 4 years</option><option>Not sure</option>
+                </select></span>
+            </label>
+          </div>
+          <div class="grid specs" data-specs="mac" hidden>
+            <label class="field">Chip
+              <span class="control"><svg class="i"><use href="#i-cpu"/></svg>
+                <select name="chip" required><option value="">Select chip</option><optgroup label="Apple silicon"><option>M1</option><option>M1 Pro</option><option>M1 Max</option><option>M2</option><option>M2 Pro</option><option>M2 Max</option><option>M3</option><option>M3 Pro</option><option>M3 Max</option><option>M4</option><option>M4 Pro</option><option>M4 Max</option><option>M5</option></optgroup><optgroup label="Intel (2020 and earlier)"><option>Intel Core i3</option><option>Intel Core i5</option><option>Intel Core i7</option><option>Intel Core i9</option></optgroup><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+            <label class="field">RAM
+              <span class="control"><svg class="i"><use href="#i-ram"/></svg>
+                <select name="ram" required><option value="">Select RAM</option><option value="8">8 GB</option><option value="16">16 GB</option><option value="18">18 GB</option><option value="24">24 GB</option><option value="32">32 GB</option><option value="36">36 GB</option><option value="48">48 GB</option><option value="64">64 GB</option><option value="96">96 GB</option><option value="128">128 GB</option><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+            <label class="field">Storage
+              <span class="control"><svg class="i"><use href="#i-drive"/></svg>
+                <select name="storage" required><option value="">Select storage</option><option value="128">128 GB</option><option value="256">256 GB</option><option value="512">512 GB</option><option value="1024">1 TB</option><option value="2048">2 TB</option><option value="4096">4 TB</option><option value="8192">8 TB</option><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+          </div>
+          <div class="grid specs specs-4" data-specs="pc" hidden>
+            <label class="field">Processor
+              <span class="control"><svg class="i"><use href="#i-cpu"/></svg>
+                <select name="processor" required><option value="">Select processor</option><optgroup label="Intel Core"><option>Intel Core i3</option><option>Intel Core i5</option><option>Intel Core i7</option><option>Intel Core i9</option></optgroup><optgroup label="Intel Core Ultra"><option>Intel Core Ultra 5</option><option>Intel Core Ultra 7</option><option>Intel Core Ultra 9</option></optgroup><optgroup label="Intel (entry)"><option>Intel Celeron</option><option>Intel Pentium</option><option>Intel Core 3</option><option>Intel Core 5</option><option>Intel Core 7</option></optgroup><optgroup label="AMD Ryzen"><option>AMD Ryzen 3</option><option>AMD Ryzen 5</option><option>AMD Ryzen 7</option><option>AMD Ryzen 9</option><option>AMD Ryzen AI 5</option><option>AMD Ryzen AI 7</option><option>AMD Ryzen AI 9</option></optgroup><optgroup label="Arm"><option>Qualcomm Snapdragon X Plus</option><option>Qualcomm Snapdragon X Elite</option><option>MediaTek Kompanio</option></optgroup><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+            <label class="field">Graphics card
+              <span class="control"><svg class="i"><use href="#i-gpu"/></svg>
+                <select name="gpu" required><option value="">Select graphics</option><optgroup label="Built-in graphics"><option value="Integrated (Intel UHD / Iris Xe / Arc)">Intel (UHD / Iris Xe / Arc)</option><option value="Integrated (AMD Radeon)">AMD Radeon (built-in)</option><option value="Integrated (Qualcomm Adreno)">Qualcomm Adreno</option></optgroup><optgroup label="NVIDIA GeForce MX / GTX"><option value="NVIDIA GeForce MX series">MX series</option><option value="NVIDIA GeForce GTX 1650">GTX 1650</option><option value="NVIDIA GeForce GTX 1650 Ti">GTX 1650 Ti</option><option value="NVIDIA GeForce GTX 1660 Ti">GTX 1660 Ti</option></optgroup><optgroup label="NVIDIA GeForce RTX 20"><option value="NVIDIA GeForce RTX 2050">RTX 2050</option><option value="NVIDIA GeForce RTX 2060">RTX 2060</option><option value="NVIDIA GeForce RTX 2070">RTX 2070</option><option value="NVIDIA GeForce RTX 2080">RTX 2080</option></optgroup><optgroup label="NVIDIA GeForce RTX 30"><option value="NVIDIA GeForce RTX 3050">RTX 3050</option><option value="NVIDIA GeForce RTX 3050 Ti">RTX 3050 Ti</option><option value="NVIDIA GeForce RTX 3060">RTX 3060</option><option value="NVIDIA GeForce RTX 3070">RTX 3070</option><option value="NVIDIA GeForce RTX 3070 Ti">RTX 3070 Ti</option><option value="NVIDIA GeForce RTX 3080">RTX 3080</option><option value="NVIDIA GeForce RTX 3080 Ti">RTX 3080 Ti</option></optgroup><optgroup label="NVIDIA GeForce RTX 40"><option value="NVIDIA GeForce RTX 4050">RTX 4050</option><option value="NVIDIA GeForce RTX 4060">RTX 4060</option><option value="NVIDIA GeForce RTX 4070">RTX 4070</option><option value="NVIDIA GeForce RTX 4080">RTX 4080</option><option value="NVIDIA GeForce RTX 4090">RTX 4090</option></optgroup><optgroup label="NVIDIA GeForce RTX 50"><option value="NVIDIA GeForce RTX 5050">RTX 5050</option><option value="NVIDIA GeForce RTX 5060">RTX 5060</option><option value="NVIDIA GeForce RTX 5070">RTX 5070</option><option value="NVIDIA GeForce RTX 5070 Ti">RTX 5070 Ti</option><option value="NVIDIA GeForce RTX 5080">RTX 5080</option><option value="NVIDIA GeForce RTX 5090">RTX 5090</option></optgroup><optgroup label="NVIDIA workstation"><option value="NVIDIA Quadro / RTX A-series">Quadro / RTX A-series</option><option value="NVIDIA RTX Ada (500–5000)">RTX Ada (500–5000)</option></optgroup><optgroup label="AMD Radeon"><option value="AMD Radeon RX 5000M series">Radeon RX 5000M series</option><option value="AMD Radeon RX 6000M series">Radeon RX 6000M series</option><option value="AMD Radeon RX 7000M series">Radeon RX 7000M series</option></optgroup><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+            <label class="field">RAM
+              <span class="control"><svg class="i"><use href="#i-ram"/></svg>
+                <select name="ram" required><option value="">Select RAM</option><option value="4">4 GB</option><option value="8">8 GB</option><option value="12">12 GB</option><option value="16">16 GB</option><option value="24">24 GB</option><option value="32">32 GB</option><option value="64">64 GB</option><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+            <label class="field">Storage
+              <span class="control"><svg class="i"><use href="#i-drive"/></svg>
+                <select name="storage" required><option value="">Select storage</option><optgroup label="SSD (solid state)"><option value="SSD:128">128 GB SSD</option><option value="SSD:256">256 GB SSD</option><option value="SSD:512">512 GB SSD</option><option value="SSD:1024">1 TB SSD</option><option value="SSD:2048">2 TB SSD</option><option value="SSD:4096">4 TB SSD</option></optgroup><optgroup label="HDD (hard disk)"><option value="HDD:320">320 GB HDD</option><option value="HDD:500">500 GB HDD</option><option value="HDD:1024">1 TB HDD</option><option value="HDD:2048">2 TB HDD</option></optgroup><optgroup label="SSD + HDD (dual drive)"><option value="SSD+HDD:128+500">128 GB SSD + 500 GB HDD</option><option value="SSD+HDD:128+1024">128 GB SSD + 1 TB HDD</option><option value="SSD+HDD:256+1024">256 GB SSD + 1 TB HDD</option><option value="SSD+HDD:512+1024">512 GB SSD + 1 TB HDD</option><option value="SSD+HDD:512+2048">512 GB SSD + 2 TB HDD</option><option value="SSD+HDD:1024+1024">1 TB SSD + 1 TB HDD</option><option value="SSD+HDD:1024+2048">1 TB SSD + 2 TB HDD</option></optgroup><option value="NOT_SURE">Not sure</option></select></span>
+            </label>
+          </div>
+          <fieldset>
+            <legend>Overall condition</legend>
+            <div class="pills">
+              <label><input type="radio" name="condition" value="LIKE_NEW" required /><span><svg class="i"><use href="#i-sparkle"/></svg>Like new</span></label>
+              <label><input type="radio" name="condition" value="GOOD" /><span><svg class="i"><use href="#i-circle-check"/></svg>Light wear</span></label>
+              <label><input type="radio" name="condition" value="FAIR" /><span><svg class="i"><use href="#i-wear"/></svg>Visible wear</span></label>
+              <label><input type="radio" name="condition" value="NEEDS_REPAIR" /><span><svg class="i"><use href="#i-wrench"/></svg>Has issues</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>What do you have with it?</legend>
+            <div class="pills">
+              <label><input type="checkbox" name="charger" /><span><svg class="i"><use href="#i-plug"/></svg>Original charger</span></label>
+              <label><input type="checkbox" name="bill" /><span><svg class="i"><use href="#i-receipt"/></svg>Purchase bill</span></label>
+              <label><input type="checkbox" name="box" /><span><svg class="i"><use href="#i-box"/></svg>Original box</span></label>
+            </div>
+          </fieldset>
+
+          <div class="step"><span class="step-n">2</span><h4>How we reach you</h4></div>
+          <div class="grid">
+            <label class="field">Full name
+              <span class="control"><svg class="i"><use href="#i-user"/></svg><input name="name" required autocomplete="name" placeholder="Your name" /></span></label>
+            <label class="field">Mobile number
+              <span class="control has-prefix"><svg class="i"><use href="#i-phone"/></svg><em>+91</em><input name="phone" required type="tel" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="9876543210" autocomplete="tel-national" /></span></label>
+            <label class="field">City
+              <span class="control"><svg class="i"><use href="#i-pin"/></svg><input name="city" required autocomplete="address-level2" placeholder="e.g. Chennai" /></span></label>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn-accent" type="submit">Get my offer <svg class="i"><use href="#i-arrow"/></svg></button>
+            <small><svg class="i"><use href="#i-lock"/></svg>No obligation. You decide after you hear the offer.</small>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+          <div class="success" hidden>
+            <strong><svg class="i"><use href="#i-check"/></svg>Thank you — we've got your details<span class="ref"></span>.</strong>
+            <p>Our team will call you within one working day with an offer for your laptop.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Shop by brands -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <span class="eyebrow center">Shop by brand</span>
+      <h2>The names professionals trust</h2>
+      <div class="brand-grid">
+        <a href="#action" data-open="buy" data-brand="Apple"><img class="brand-logo" src="brands/apple.svg" alt="Apple" /><span>MacBook Air &amp; Pro</span></a>
+        <a href="#action" data-open="buy" data-brand="Dell"><img class="brand-logo" src="brands/dell.svg" alt="Dell" /><span>Latitude &amp; XPS</span></a>
+        <a href="#action" data-open="buy" data-brand="HP"><img class="brand-logo" src="brands/hp.svg" alt="HP" /><span>EliteBook &amp; ProBook</span></a>
+        <a href="#action" data-open="buy" data-brand="Lenovo"><img class="brand-logo wide" src="brands/lenovo.svg" alt="Lenovo" /><span>ThinkPad &amp; IdeaPad</span></a>
+        <a href="#action" data-open="buy" data-brand="ASUS"><img class="brand-logo wide" src="brands/asus.svg" alt="ASUS" /><span>ZenBook &amp; VivoBook</span></a>
+        <a href="#action" data-open="buy" data-brand="Acer"><img class="brand-logo wide" src="brands/acer.svg" alt="Acer" /><span>Swift &amp; Aspire</span></a>
+        <a href="#action" data-open="buy" data-brand="Microsoft"><b class="brand-word">Microsoft</b><span>Surface Laptop</span></a>
+        <a href="#action" data-open="buy" class="brand-all"><b>Not sure?</b><span>Let us recommend →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Have questions -->
+  <section class="faq" id="faq">
+    <div class="container faq-inner">
+      <div class="faq-side">
+        <span class="eyebrow">Have questions?</span>
+        <h2>We've got answers.</h2>
+        <p>Can't find what you're looking for? Talk to a real person.</p>
+        <a href="tel:+919741078731" class="btn btn-dark">Contact Us</a>
+        <a href="mailto:support@fynd.club" class="link">support@fynd.club</a>
+      </div>
+      <div class="faq-list">
+        <details open><summary>What does "refurbished" mean at Fynd.club?</summary><p>Every laptop is inspected, security-checked and tested component by component. We wipe all previous data, clean it thoroughly and fix or replace anything that doesn't meet our standard before it's listed.</p></details>
+        <details><summary>How do grades A, B and C differ?</summary><p>Grade A is like new, with hardly a mark. Grade B shows light signs of use. Grade C has visible cosmetic wear but works perfectly. All grades are functionally identical and carry the same warranty.</p></details>
+        <details><summary>What does the warranty cover?</summary><p>Every laptop comes with a 6-month warranty from the date of delivery, covering hardware faults that aren't caused by accidental damage or misuse.</p></details>
+        <details><summary>Can I return a laptop?</summary><p>Yes. You have 10 days from delivery to return it if it isn't right for you, as set out in our return policy.</p></details>
+        <details><summary>Can I upgrade the RAM or SSD?</summary><p>Yes. On supported models you can choose more memory or a larger SSD when you order. We fit and test the upgrade before shipping.</p></details>
+        <details><summary>How does selling my laptop work?</summary><p>Fill in the sell form above. Our team calls you with an offer; if you accept, we collect the laptop, run a security check and pay you. Your data is wiped securely.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <p class="tagline">Honestly graded,<br />carefully refurbished.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Shop</h4>
+          <a href="#action" data-open="buy">Buy a laptop</a>
+          <a href="#action" data-open="sell">Sell your laptop</a>
+          <a href="#brands">Brands</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:support@fynd.club">support@fynd.club</a>
+          <a href="tel:+919741078731">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Fynd.club. All rights reserved.</small>
+      <nav aria-label="Policies">
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-service">Terms</a>
+        <a href="/warranty-policy">Warranty</a>
+        <a href="/return-policy">Returns</a>
+        <a href="/shipping-policy">Shipping</a>
+        <a href="/quality-check-policy">Quality Check</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="config.js?v=20261123112949"></script>
+  <script src="select.js?v=20261123112949"></script>
+  <script src="script.js?v=20261123112949"></script>
+  <script src="back-to-top.js"></script>
+</body>
+</html>
