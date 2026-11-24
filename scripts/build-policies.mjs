@@ -73,8 +73,8 @@ const page = (slug, title, body) => `<!doctype html>
     <div class="container header-inner">
       <a href="/" class="logo"><img src="/logo.svg" alt="Fynd.club" /></a>
       <nav class="nav" aria-label="Main">
-        <a href="/#action">Buy a laptop</a>
-        <a href="/#action">Sell your laptop</a>
+        <a href="/buy">Buy a laptop</a>
+        <a href="/sell">Sell your laptop</a>
         <a href="/#brands">Brands</a>
         <a href="/#faq">FAQ</a>
       </nav>

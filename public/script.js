@@ -47,9 +47,28 @@ function openForm(kind, brand) {
 
 choices.forEach((c) => c.addEventListener('click', () => openForm(c.dataset.form)));
 // Links elsewhere on the page (header, banners, brand tiles, footer) open a form too.
+// They point to /buy and /sell (the server serves this page there), so those URLs can be shared.
+const section = document.getElementById('action');
+const FORM_PATHS = { '/buy': 'buy', '/sell': 'sell' };
+function goToForm(kind, brand, smooth = true) {
+  openForm(kind, brand);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  section.scrollIntoView({ behavior: smooth && !reduce ? 'smooth' : 'auto' });
+}
 document.querySelectorAll('[data-open]').forEach((a) =>
-  a.addEventListener('click', () => openForm(a.dataset.open, a.dataset.brand)),
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    const path = `/${a.dataset.open}`;
+    if (location.pathname !== path) history.pushState(null, '', path);
+    goToForm(a.dataset.open, a.dataset.brand);
+  }),
 );
+function fromUrl(smooth) {
+  const kind = FORM_PATHS[location.pathname.replace(/\/+$/, '')] ?? { '#buy': 'buy', '#sell': 'sell' }[location.hash];
+  if (kind) goToForm(kind, undefined, smooth);
+}
+window.addEventListener('popstate', () => fromUrl(true));
+fromUrl(false);
 
 // ---- Sending: POST /api/enquiry; server.js emails it over SMTP ----
 const API = window.FYND_API_BASE ?? '';

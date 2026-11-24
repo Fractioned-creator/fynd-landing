@@ -3,12 +3,14 @@ import { resolve } from 'node:path';
 
 const pages = ['privacy-policy', 'terms-of-service', 'warranty-policy', 'return-policy', 'shipping-policy', 'quality-check-policy'];
 
-// Serve /privacy-policy (no trailing slash) as /privacy-policy/index.html instead of falling back to the home page.
+// Serve /buy and /sell as the home page (script.js opens that form), and
+// serve /privacy-policy (no trailing slash) as /privacy-policy/index.html instead of falling back to the home page.
 const cleanUrls = () => {
   const rewrite = (req, _res, next) => {
     const [path, query = ''] = req.url.split('?');
     const slug = path.replace(/^\/|\/$/g, '');
     if (pages.includes(slug)) req.url = `/${slug}/index.html${query ? `?${query}` : ''}`;
+    else if (slug === 'buy' || slug === 'sell') req.url = `/index.html${query ? `?${query}` : ''}`;
     next();
   };
   return {

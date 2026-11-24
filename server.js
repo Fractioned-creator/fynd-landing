@@ -83,7 +83,8 @@ function json(res, status, body) {
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.json': 'application/json' };
 
 async function serveFile(req, res) {
-  const path = normalize(decodeURIComponent(new URL(req.url, 'http://x').pathname)).replace(/^(\.\.[/\\])+/, '');
+  let path = normalize(decodeURIComponent(new URL(req.url, 'http://x').pathname)).replace(/^(\.\.[/\\])+/, '');
+  if (/^\/(buy|sell)\/?$/.test(path)) path = '/index.html'; // the forms live on the home page; script.js opens the right one
   for (const candidate of [path, join(path, 'index.html')]) {
     const file = join(DIST, candidate);
     if (!file.startsWith(DIST)) break;
